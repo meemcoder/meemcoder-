@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Java script task 3</title>
+</head>
+<body>
+    <script>
+        function divisibilty(number) {
+            let outcomes = []
+
+for (i = 1; i <= number; i++) {
+   
+    if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {outcomes.push("yu-gi-oh");}
+    else if (i % 2 == 0 && i % 3 == 0) {outcomes.push("yu-gi");}
+    else if ( i % 2 == 0 && i % 5 == 0) {outcomes.push("yu-oh");}
+    else if (i % 3 == 0 && i % 5 == 0) {outcomes.push("gi-oh");}
+    else if (i % 2 == 0){outcomes.push("yu");}
+    else if (i % 3 == 0){outcomes.push("gi");}
+    else if (i % 5 == 0){outcomes.push("oh");}
+    else {outcomes.push(i)}
+}
+    console.log(outcomes);
+    return outcomes 
+        }
+        divisibilty(100)
+        divisibilty(20)
+    </script>
+</body>
+</html>
